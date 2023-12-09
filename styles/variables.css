@@ -1,4 +1,37 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #ff0070;
+  --background-accent: var(--accent-color, #ff0070);
+  --color-button: var(--accent-color, #ff0070);
+  --border: var(--accent-color, #ff0070);
+  --color-title: #DB00FF;
+  --font-family: 'IBM Plex Mono', 'Arial', sans-serif; 
+  --color-text: #F1B2CE;
+  --font-weight-normal: 400px;
+  --background-image-page: url(../images/cover-image-dark.png);
+  --background-image-cover: url(../images/cover-image-dark.png);
+  --background-color: #000028;
+  --color-title-decor: var(--background-color, #000028);
+  --shadow: var(--accent-color, #ff0070); 
+  }
+}
+ 
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff0070;
+    --background-accent: #FF8DCB;
+    --color-button: var(--color-text, #353430);
+    --border: var(--color-text, #353430);
+    --color-title: #FFC2E6;
+    --font-family: 'IBM Plex Mono', 'Arial', sans-serif; 
+    --color-text: #353430;
+    --font-weight-normal: 400px;
+    --background-image-page: url(../images/cover-image-light.png);
+    --background-image-cover: url(../images/cover-image-light.png);
+    --background-color: #FFF1F7; 
+    --color-title-decor: var(--color-text, #353430);
+    --shadow: #FF8DCB; 
+  }
+} 
+
+  
