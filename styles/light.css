@@ -4,12 +4,16 @@
   --background-accent: #FF8DCB;
   --color-button: var(--color-text, #353430);
   --border: var(--color-text, #353430);
+  --border-hover: rgba(50, 49, 45, 0.40);
   --color-title: #FFC2E6;
-  --font-family: 'IBM Plex Mono', 'Arial', sans-serif; 
+  --font-family: 'IBM Plex Mono', 'Arial', monospace; 
+  --font-size-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-size-small: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-family: 'IBM Plex Mono', 'Arial', monospace; 
+  --font-size-page: 18px;
   --color-text: #353430;
   --font-weight-normal: 400px;
   --background-image-page: url(../images/cover-image-light.png);
-  --background-image-cover: url(../images/cover-image-light.png);
   --background-color: #FFF1F7; 
   --color-title-decor: var(--color-text, #353430);
   --shadow: #FF8DCB;
@@ -20,18 +24,41 @@
   --background-accent: #FF8DCB;
   --color-button: var(--color-text, #353430);
   --border: var(--color-text, #353430);
+  --border-hover: rgba(50, 49, 45, 0.40);
   --color-title: #FFC2E6;
-  --font-family: 'IBM Plex Mono', 'Arial', sans-serif; 
+  --font-family: 'IBM Plex Mono', 'Arial', monospace; 
+  --font-size-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-size-small: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-family: 'IBM Plex Mono', 'Arial', monospace; 
+  --font-size-page: 18px;
   --color-text: #353430;
   --font-weight-normal: 400px;
   --background-image-page: url(../images/cover-image-light.png);
-  --background-image-cover: url(../images/cover-image-light.png);
   --background-color: #FFF1F7; 
   --color-title-decor: var(--color-text, #353430);
   --shadow: #FF8DCB;
+  --header__rec-hide: hidden;
 }
 
-.page.theme_light .header__rec {
-  display: none;
-}
-
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff0070;
+    --background-accent: #FF8DCB;
+    --color-button: var(--color-text, #353430);
+    --border: var(--color-text, #353430);
+    --border-hover: rgba(50, 49, 45, 0.40); 
+    --color-title: #FFC2E6;
+    --font-family: 'IBM Plex Mono', 'Arial', monospace; 
+    --font-size-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --font-size-small: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --font-family: 'IBM Plex Mono', 'Arial', monospace; 
+    --font-size-page: 18px;
+    --color-text: #353430;
+    --font-weight-normal: 400px;
+    --background-image-page: url(../images/cover-image-light.png);
+     --background-color: #FFF1F7; 
+    --color-title-decor: var(--color-text, #353430);
+    --shadow: #FF8DCB; 
+    --header__rec-hide: hidden;
+  }
+} 
