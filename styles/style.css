@@ -1,5 +1,4 @@
 body {
- max-width: 1024px;
  font-family: var(--font-family, 'IBM Plex Mono', 'Arial', monospace);
  font-style: normal;
  font-size: var(--font-size-page);
@@ -22,7 +21,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 20px;
   display: grid;
@@ -212,13 +211,11 @@ body {
 /*основной контент страницы*/
 .content {
   display: grid;
-  gap: 80px;
   padding: 60px 20px 0 20px;
 }
 
 @media (width < 768px) {
   .content {
-    gap: 50px;
     padding: 40px 10px 0 10px;
   }
 }
@@ -234,6 +231,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 12px;
+  margin-block-end: 70px;
 }
 
 @media (768px <= width < 1024px) {
@@ -247,6 +245,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 22px;
+    margin-block-end: 40px;
   }
 }
 
@@ -296,6 +295,17 @@ body {
   color: var(--color-text, #F1B2CE);
   font-weight: var(--font-weight-normal, 400px);
   line-height: 23.4px;
+  margin-block-end: 10px; !!!!!!!!!!!!!!!!!!!
+}
+
+.content__section-article {
+  margin-block-end: 80px;
+}
+
+@media (width < 768px) {
+  .content__section-article {
+    margin-block-end: 50px;
+  }
 }
 
 .content__textfield {
@@ -318,6 +328,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+ 
 }
 
 @media (width < 1024px) {
@@ -469,7 +480,7 @@ body {
 
 /*подвал сайта*/
 .footer {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
