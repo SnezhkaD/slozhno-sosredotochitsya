@@ -295,7 +295,7 @@ body {
   color: var(--color-text, #F1B2CE);
   font-weight: var(--font-weight-normal, 400px);
   line-height: 23.4px;
-  margin-block-end: 10px; 
+  margin-block-end: 10px;
 }
 
 .content__section-article {
@@ -328,8 +328,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
- 
-}
+ }
 
 @media (width < 1024px) {
   .content__list {
@@ -476,7 +475,6 @@ body {
      height: 237px;
   }
 }
-
 
 /*подвал сайта*/
 .footer {
