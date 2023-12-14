@@ -295,7 +295,7 @@ body {
   color: var(--color-text, #F1B2CE);
   font-weight: var(--font-weight-normal, 400px);
   line-height: 23.4px;
-  margin-block-end: 10px; !!!!!!!!!!!!!!!!!!!
+  margin-block-end: 10px; 
 }
 
 .content__section-article {
