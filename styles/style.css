@@ -21,6 +21,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
   min-height: 100vh;
   width: 100%;
   padding: 20px;
@@ -299,12 +300,12 @@ body {
 }
 
 .content__section-article {
-  margin-block-end: 80px;
+  margin-block-end: 70px;
 }
 
 @media (width < 768px) {
   .content__section-article {
-    margin-block-end: 50px;
+    margin-block-end: 40px;
   }
 }
 
@@ -322,6 +323,7 @@ body {
   color: var(--color-text, #F1B2CE);
   font-weight: var(--font-weight-normal, 400px);
   line-height: 23.4px;
+  margin-block-end: 10px;
 }
 
 .content__list {
@@ -478,6 +480,7 @@ body {
 
 /*подвал сайта*/
 .footer {
+  height: 100vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
